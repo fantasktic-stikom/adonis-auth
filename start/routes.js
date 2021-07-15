@@ -24,3 +24,5 @@ Route.post('register', 'Auth/RegisterController.store').as('register.store')
 Route.get('login', 'Auth/LoginController.index').as('login.index')
 Route.post('login', 'Auth/LoginController.check').as('login.check')
 Route.get('logout', 'Auth/LoginController.logout').as('logout')
+
+Route.get('dashboard', 'DashboardController.index').as('dashboard')
